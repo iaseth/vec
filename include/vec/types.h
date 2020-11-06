@@ -14,6 +14,8 @@ struct Vec {
 	long capacity;
 	long cursor;
 
+	void *(*clone) (void *e);
+
 	bool (*less_than) (void *e1, void *e2);
 	bool (*hash_code) (void *e, char *s);
 	bool (*to_string) (void *e, char *s);
