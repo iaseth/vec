@@ -8,6 +8,6 @@ struct VecNamespace vec_struct = {
 	.delete = &vec_delete,
 };
 
-const struct VecNamespace *const vec = &vec_struct;
+VecNamespace vec = &vec_struct;
 
 

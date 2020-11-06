@@ -3,13 +3,7 @@
 
 #include "vec/types.h"
 
-struct VecNamespace {
-	Vec (*new) ();
-	Vec (*new_n) (long capacity);
-	Vec (*delete) (Vec v);
-};
-
-extern const struct VecNamespace *const vec;
+extern VecNamespace vec;
 
 
 
