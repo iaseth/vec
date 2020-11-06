@@ -10,7 +10,8 @@ AR = ${AMP}ar
 RM = ${AMP}rm -f
 
 VEC_NAMES = 
-VEC_NAMES += vec
+VEC_NAMES += types
+VEC_NAMES += crud
 
 VEC_OBJ_NAMES = ${addsuffix .o, ${VEC_NAMES}}
 VEC_OBJS = ${addprefix build/, ${VEC_OBJ_NAMES}}
@@ -36,7 +37,7 @@ ${BIN}: ${MAIN_OBJ} ${VEC_OBJS}
 ${MAIN_OBJ}: ${MAIN_SRC}
 	${CC} -c ${CC_FLAGS} $< -o $@ ${INCLUDE_FLAG}
 
-${VEC_OBJS}: build/%.o: lib/%.c include/%.h
+${VEC_OBJS}: build/%.o: lib/%.c include/vec/%.h
 	${CC} -c ${CC_FLAGS} $< -o $@ ${INCLUDE_FLAG}
 
 ${VEC_STATIC_LIB}: ${VEC_OBJS}
