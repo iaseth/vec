@@ -20,8 +20,8 @@ main (int argc, char const *argv[])
 		vec->push(v, p);
 	}
 
-	for (long i = 0; i < v->length; ++i) {
-		struct Point *ps = v->data[i];
+	foreach_vec (index, v) {
+		struct Point *ps = v->data[index];
 		printf("Point (%d, %d, %d)\n", ps->x, ps->y, ps->z);
 	}
 	v = vec->delete(v);
