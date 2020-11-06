@@ -12,6 +12,7 @@ X.Y.Z | (goals)
   * Implemented `vec_empty()` and `vec_full()` functions
   * Added magic method fields to `Vec`: `less_than()`, `hash_code()` and `to_string()`
   * Added magic method field `clone()` to allow for creating a duplicate copy of `Vec`
+  * Added first `example`: `points.c`
 
 
 0.1.0 | 07-11-2020

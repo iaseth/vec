@@ -17,6 +17,15 @@ VEC_NAMES += vec
 VEC_OBJ_NAMES = ${addsuffix .o, ${VEC_NAMES}}
 VEC_OBJS = ${addprefix build/, ${VEC_OBJ_NAMES}}
 
+
+
+VEC_EXAMPLE_NAMES = 
+VEC_EXAMPLE_NAMES += points
+
+VEC_EXAMPLE_EXES = ${addprefix build/examples/, ${VEC_EXAMPLE_NAMES}}
+
+
+
 VEC_STATIC_LIB = build/libvec.a
 VEC_DYNAMIC_LIB = build/libvec.so
 
@@ -29,6 +38,8 @@ default: clean lib ${BIN}
 
 lib: ${VEC_STATIC_LIB} ${VEC_DYNAMIC_LIB}
 
+examples: ${VEC_EXAMPLE_EXES}
+
 debug:
 	${eval AMP := }
 
@@ -40,6 +51,9 @@ ${MAIN_OBJ}: ${MAIN_SRC}
 
 ${VEC_OBJS}: build/%.o: lib/%.c include/vec/%.h
 	${CC} -c ${CC_FLAGS} $< -o $@ ${INCLUDE_FLAG}
+
+${VEC_EXAMPLE_EXES}: build/examples/%: examples/%.c
+	${CC} -o ${CC_FLAGS} $< -o $@ ${INCLUDE_FLAG} ${VEC_STATIC_LIB}
 
 ${VEC_STATIC_LIB}: ${VEC_OBJS}
 	${AR} rcs $@ $^
