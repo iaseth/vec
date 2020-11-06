@@ -17,6 +17,7 @@ vec_new_n (long capacity)
 	v->data = malloc(capacity * (sizeof (void *)));
 	v->length = 0;
 	v->capacity = capacity;
+	v->cursor = 0;
 	return v;
 }
 

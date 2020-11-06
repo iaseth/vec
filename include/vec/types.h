@@ -12,6 +12,7 @@ struct Vec {
 	void **data;
 	long length;
 	long capacity;
+	long cursor;
 
 	VecNamespace (*print) ();
 };
@@ -32,9 +33,16 @@ struct VecNamespace {
 	bool (*empty) (Vec v);
 	bool (*full) (Vec v);
 
+	void *(*get) (Vec v);
+	void *(*get_nth) (Vec v, long n);
+	void *(*next) (Vec v);
+	void *(*previous) (Vec v);
+	VecNamespace (*forward) (Vec v);
+	VecNamespace (*backward) (Vec v);
+
 	void *(*front) (Vec v);
 	void *(*back) (Vec v);
-	void *(*nth) (Vec v);
+	void *(*nth) (Vec v, long n);
 
 	VecNamespace (*clear) (Vec v);
 	VecNamespace (*erase) (Vec v, long start, long end);
