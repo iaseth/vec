@@ -8,7 +8,8 @@ X.Y.Z | (goals)
 0.1.1 | (future)
 --------------------
   * Added `cursor`
-  * Implemented `length` and `capacity` functions
+  * Implemented `vec_length` and `vec_capacity` functions
+  * Implemented `vec_empty` and `vec_full` functions
 
 
 0.1.0 | 07-11-2020

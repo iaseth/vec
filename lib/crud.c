@@ -41,6 +41,24 @@ vec_delete (Vec v)
 
 
 
+bool vec_empty (Vec v)
+{
+	if (v->length == 0) {
+		return true;
+	}
+	return false;
+}
+
+bool vec_full (Vec v)
+{
+	if (v->length == v->capacity) {
+		return true;
+	}
+	return false;
+}
+
+
+
 long vec_length (Vec v)
 {
 	return v->length;

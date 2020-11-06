@@ -11,6 +11,9 @@ Vec vec_delete (Vec v);
 long vec_length (Vec v);
 long vec_capacity (Vec v);
 
+bool vec_empty (Vec v);
+bool vec_full (Vec v);
+
 VecNamespace vec_expand (Vec v);
 
 VecNamespace vec_push (Vec v, void *e);

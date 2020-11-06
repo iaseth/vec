@@ -15,6 +15,9 @@ struct VecNamespace vec_struct = {
 	.length = &vec_length,
 	.capacity = &vec_capacity,
 
+	.empty = &vec_empty,
+	.full = &vec_full,
+
 	.print = NULL
 };
 
