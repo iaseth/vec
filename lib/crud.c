@@ -15,6 +15,9 @@ vec_new_n (long capacity)
 {
 	Vec v = malloc(sizeof(struct Vec));
 	v->data = malloc(capacity * (sizeof (void *)));
+	for (long i = 0; i < capacity; ++i) {
+		v->data[i] = NULL;
+	}
 	v->length = 0;
 	v->capacity = capacity;
 	v->cursor = 0;
@@ -43,6 +46,9 @@ vec_expand (Vec v)
 {
 	long capacity = v->capacity * 2;
 	v->data = realloc(v->data, capacity * (sizeof (void *)));
+	for (long i = v->length; i < v->capacity; ++i) {
+		v->data[i] = NULL;
+	}
 	v->capacity = capacity;
 	return vec;
 }
