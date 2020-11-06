@@ -5,6 +5,12 @@ X.Y.Z | (goals)
   * Nothing yet
 
 
+0.1.1 | (future)
+--------------------
+  * Added `cursor`
+  * Implemented `length` and `capacity` functions
+
+
 0.1.0 | 07-11-2020
 --------------------
   * Added structs: `Vec` and `VecNamespace`

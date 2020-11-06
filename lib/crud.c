@@ -41,6 +41,18 @@ vec_delete (Vec v)
 
 
 
+long vec_length (Vec v)
+{
+	return v->length;
+}
+
+long vec_capacity (Vec v)
+{
+	return v->capacity;
+}
+
+
+
 VecNamespace
 vec_expand (Vec v)
 {

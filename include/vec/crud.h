@@ -8,6 +8,9 @@ Vec vec_new ();
 Vec vec_new_n (long capacity);
 Vec vec_delete (Vec v);
 
+long vec_length (Vec v);
+long vec_capacity (Vec v);
+
 VecNamespace vec_expand (Vec v);
 
 VecNamespace vec_push (Vec v, void *e);
