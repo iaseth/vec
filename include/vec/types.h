@@ -14,7 +14,9 @@ struct Vec {
 	long capacity;
 	long cursor;
 
-	VecNamespace (*print) ();
+	bool (*less_than) (void *e1, void *e2);
+	bool (*hash_code) (void *e, char *s);
+	bool (*to_string) (void *e, char *s);
 };
 
 typedef struct Vec *Vec;

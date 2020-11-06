@@ -21,6 +21,11 @@ vec_new_n (long capacity)
 	v->length = 0;
 	v->capacity = capacity;
 	v->cursor = 0;
+
+	v->less_than = NULL;
+	v->hash_code = NULL;
+	v->to_string = NULL;
+
 	return v;
 }
 

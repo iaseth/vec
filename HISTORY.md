@@ -8,8 +8,9 @@ X.Y.Z | (goals)
 0.1.1 | (future)
 --------------------
   * Added `cursor`
-  * Implemented `vec_length` and `vec_capacity` functions
-  * Implemented `vec_empty` and `vec_full` functions
+  * Implemented `vec_length()` and `vec_capacity()` functions
+  * Implemented `vec_empty()` and `vec_full()` functions
+  * Added magic method fields to Vec: `less_than()`, `hash_code()` and `to_string()`
 
 
 0.1.0 | 07-11-2020
