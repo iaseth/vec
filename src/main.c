@@ -1,13 +1,13 @@
 #include <stdio.h>
 
-#define VEC_IMPORT_FULL
+//#define VEC_IMPORT_FULL
 #include "vec.h"
 
 int
 main (int argc, char const *argv[])
 {
-	Vec v = vec_new();
+	Vec v = vec->new();
 	printf("Hello, Vec!\n");
-	v = vec_delete(v);
+	v = vec->delete(v);
 	return 0;
 }
