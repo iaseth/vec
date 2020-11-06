@@ -4,12 +4,14 @@
 
 
 
-Vec vec_new ()
+Vec
+vec_new ()
 {
 	return vec_new_n(VEC_DEFAULT_LENGTH);
 }
 
-Vec vec_new_n (long capacity)
+Vec
+vec_new_n (long capacity)
 {
 	Vec v = malloc(sizeof(struct Vec));
 	v->data = malloc(capacity * (sizeof (void *)));
@@ -18,12 +20,27 @@ Vec vec_new_n (long capacity)
 	return v;
 }
 
-Vec vec_delete (Vec v)
+Vec
+vec_delete (Vec v)
 {
 	if (v != NULL) {
 		if (v->data != NULL) free(v->data);
 		free(v);
 	}
+	return NULL;
+}
+
+
+
+const struct VecNamespace *
+vec_push (Vec v, void *e)
+{
+	return vec;
+}
+
+void *
+vec_pop (Vec v)
+{
 	return NULL;
 }
 
