@@ -23,6 +23,9 @@ struct VecNamespace {
 	Vec (*new_n) (long capacity);
 	Vec (*delete) (Vec v);
 
+	VecNamespace (*push) (Vec v, void *e);
+	void *(*pop) (Vec v);
+
 	long (*length) (Vec v);
 	long (*capacity) (Vec v);
 
