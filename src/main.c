@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+#define VEC_IMPORT_FULL
 #include "vec.h"
 
 int
