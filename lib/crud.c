@@ -63,7 +63,14 @@ vec_push (Vec v, void *e)
 void *
 vec_pop (Vec v)
 {
-	return NULL;
+	if (v->length == 0) {
+		return NULL;
+	}
+	long last_index = v->length - 1;
+	void *last = v->data[last_index];
+	v->data[last_index] = NULL;
+	v->length--;
+	return last;
 }
 
 
