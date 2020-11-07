@@ -17,7 +17,7 @@ VEC_NAMES += deep_ranges
 VEC_NAMES += crud
 VEC_NAMES += order
 VEC_NAMES += print
-VEC_NAMES += defaults
+VEC_NAMES += magic_defaults
 VEC_NAMES += magic
 VEC_NAMES += vec
 

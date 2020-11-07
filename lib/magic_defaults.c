@@ -1,4 +1,4 @@
-#include "vec/defaults.h"
+#include "vec/magic_defaults.h"
 
 #include <stdio.h>
 #include <stdlib.h>

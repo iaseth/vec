@@ -2,7 +2,7 @@
 
 #include <stdlib.h>
 
-#include "vec/defaults.h"
+#include "vec/magic_defaults.h"
 #include "vec/vec.h"
 
 
