@@ -34,6 +34,23 @@ struct VecNamespace {
 	Vec (*delete) (Vec v);
 	Vec (*destroy) (Vec v);
 
+	long (*length) (Vec v);
+	long (*capacity) (Vec v);
+
+	bool (*empty) (Vec v);
+	bool (*full) (Vec v);
+
+	VecNamespace (*push) (Vec v, void *e);
+	void *(*pop) (Vec v);
+
+	VecNamespace (*resize) (Vec v, long capacity);
+	VecNamespace (*reserve) (Vec v, long capacity);
+
+	VecNamespace (*swap) (Vec v, long a, long b);
+	VecNamespace (*reverse) (Vec v);
+	VecNamespace (*shuffle) (Vec v);
+	VecNamespace (*sort) (Vec v);
+
 	Vec (*slice) (Vec v, long start, long end);
 	Vec (*subvec) (Vec v, long start, long length);
 	Vec (*prefix) (Vec v, long length);
@@ -45,15 +62,6 @@ struct VecNamespace {
 	Vec (*deep_prefix) (Vec v, long length);
 	Vec (*deep_suffix) (Vec v, long length);
 	Vec (*deep_copy) (Vec v);
-
-	VecNamespace (*push) (Vec v, void *e);
-	void *(*pop) (Vec v);
-
-	long (*length) (Vec v);
-	long (*capacity) (Vec v);
-
-	bool (*empty) (Vec v);
-	bool (*full) (Vec v);
 
 	void *(*get) (Vec v);
 	void *(*get_nth) (Vec v, long n);
@@ -69,20 +77,12 @@ struct VecNamespace {
 	VecNamespace (*clear) (Vec v);
 	VecNamespace (*erase) (Vec v, long start, long end);
 
+	VecNamespace (*set_name) (Vec v, char *name);
+
 	VecNamespace (*print) (Vec v);
 	VecNamespace (*print_slots) (Vec v);
 	VecNamespace (*print_slots_compact) (Vec v);
 	VecNamespace (*print_stats) (Vec v);
-
-	VecNamespace (*set_name) (Vec v, char *name);
-
-	VecNamespace (*swap) (Vec v, long a, long b);
-	VecNamespace (*reverse) (Vec v);
-	VecNamespace (*shuffle) (Vec v);
-	VecNamespace (*sort) (Vec v);
-
-	VecNamespace (*resize) (Vec v, long capacity);
-	VecNamespace (*reserve) (Vec v, long capacity);
 
 	VecNamespace (*me) ();
 };

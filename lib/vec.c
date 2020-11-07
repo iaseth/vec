@@ -3,12 +3,12 @@
 #include <stdlib.h>
 
 #include "vec/genesis.h"
-#include "vec/ranges.h"
-#include "vec/deep_ranges.h"
 #include "vec/crud.h"
 #include "vec/order.h"
-#include "vec/print.h"
+#include "vec/ranges.h"
+#include "vec/deep_ranges.h"
 #include "vec/magic.h"
+#include "vec/print.h"
 
 
 
@@ -25,6 +25,20 @@ struct VecNamespace vec_struct = {
 	.delete = &vec_delete,
 	.destroy = &vec_destroy,
 
+	.push = &vec_push,
+	.pop = &vec_pop,
+
+	.length = &vec_length,
+	.capacity = &vec_capacity,
+
+	.empty = &vec_empty,
+	.full = &vec_full,
+
+	.swap = &vec_swap,
+	.reverse = &vec_reverse,
+	.shuffle = &vec_shuffle,
+	.sort = &vec_sort,
+
 	.slice = &vec_slice,
 	.subvec = &vec_subvec,
 	.prefix = &vec_prefix,
@@ -37,26 +51,12 @@ struct VecNamespace vec_struct = {
 	.deep_suffix = &vec_deep_suffix,
 	.deep_copy = &vec_deep_copy,
 
-	.push = &vec_push,
-	.pop = &vec_pop,
-
-	.length = &vec_length,
-	.capacity = &vec_capacity,
-
-	.empty = &vec_empty,
-	.full = &vec_full,
+	.set_name = &vec_set_name,
 
 	.print = &vec_print,
 	.print_slots = &vec_print_slots,
 	.print_slots_compact = &vec_print_slots_compact,
 	.print_stats = &vec_print_stats,
-
-	.set_name = &vec_set_name,
-
-	.swap = &vec_swap,
-	.reverse = &vec_reverse,
-	.shuffle = &vec_shuffle,
-	.sort = &vec_sort,
 
 	.me = &vec_me
 };
