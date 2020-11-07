@@ -5,7 +5,7 @@ X.Y.Z | (goals)
   * Nothing yet
 
 
-0.1.2 | (future)
+0.1.2 | 07-11-2020
 --------------------
   * Added new module: `print.h`
   * Implemented `vec_stats()`
@@ -13,6 +13,7 @@ X.Y.Z | (goals)
   * Added new module: `magic.h`
   * Added new module: `defaults.h` for defining default magic methods
   * Implemented `vec_print()`
+  * Implemented `vec_print_slots()`
   * Added new module: `ranges.h`
   * Added `vec_copy()` and `vec_duplicate()`
 

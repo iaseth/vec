@@ -34,6 +34,28 @@ vec_print (Vec v)
 }
 
 VecNamespace
+vec_print_slots (Vec v)
+{
+	if (v == NULL) {
+		printf("NULL passed to vec_print_slots()\n");
+	}
+
+	for (long index = 0; index < v->capacity; ++index) {
+		if (v->data[index] == NULL) {
+			printf("  %5ld [.........]  ", index);
+		} else {
+			printf("  %5ld [%p]  ", index, v->data[index]);
+		}
+
+		if ((index+1) % 8 == 0) {
+			printf("\n");
+		}
+	}
+	printf("\n");
+	return vec;
+}
+
+VecNamespace
 vec_print_stats (Vec v)
 {
 	if (v != NULL) {

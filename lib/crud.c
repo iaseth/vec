@@ -39,7 +39,7 @@ vec_expand (Vec v)
 {
 	long capacity = v->capacity * 2;
 	v->data = realloc(v->data, capacity * (sizeof (void *)));
-	for (long i = v->length; i < v->capacity; ++i) {
+	for (long i = v->length; i < capacity; ++i) {
 		v->data[i] = NULL;
 	}
 	v->capacity = capacity;
