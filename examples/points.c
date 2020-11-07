@@ -22,8 +22,13 @@ main (int argc, char const *argv[])
 
 	foreach_vec (index, v) {
 		struct Point *ps = v->data[index];
-		printf("Point (%d, %d, %d)\n", ps->x, ps->y, ps->z);
+		printf("\t%3ld. Point (%3d, %3d, %3d)", index, ps->x, ps->y, ps->z);
+		if (index % 4 == 3) {
+			printf("\n");
+		}
 	}
+	printf("\n");
+
 	v = vec->destroy(v);
 	return 0;
 }
