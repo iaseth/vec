@@ -56,6 +56,29 @@ vec_print_slots (Vec v)
 }
 
 VecNamespace
+vec_print_slots_compact (Vec v)
+{
+	if (v == NULL) {
+		printf("NULL passed to vec_print_slots_compact()\n");
+	}
+
+	printf("\t");
+	for (long index = 0; index < v->capacity; ++index) {
+		if (v->data[index] == NULL) {
+			printf("_");
+		} else {
+			printf("+");
+		}
+
+		if ((index+1) % 64 == 0) {
+			printf("\n\t");
+		}
+	}
+	printf("\n");
+	return vec;
+}
+
+VecNamespace
 vec_print_stats (Vec v)
 {
 	if (v != NULL) {

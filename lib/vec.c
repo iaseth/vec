@@ -42,6 +42,7 @@ struct VecNamespace vec_struct = {
 
 	.print = &vec_print,
 	.print_slots = &vec_print_slots,
+	.print_slots_compact = &vec_print_slots_compact,
 	.print_stats = &vec_print_stats,
 
 	.swap = &vec_swap,

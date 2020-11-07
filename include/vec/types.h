@@ -65,6 +65,7 @@ struct VecNamespace {
 
 	VecNamespace (*print) (Vec v);
 	VecNamespace (*print_slots) (Vec v);
+	VecNamespace (*print_slots_compact) (Vec v);
 	VecNamespace (*print_stats) (Vec v);
 
 	VecNamespace (*swap) (Vec v, long a, long b);

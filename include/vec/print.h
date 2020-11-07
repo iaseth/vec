@@ -5,6 +5,7 @@
 
 VecNamespace vec_print (Vec v);
 VecNamespace vec_print_slots (Vec v);
+VecNamespace vec_print_slots_compact (Vec v);
 VecNamespace vec_print_stats (Vec v);
 
 

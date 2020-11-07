@@ -8,6 +8,7 @@ X.Y.Z | (goals)
 0.1.3 | (goals)
 --------------------
   * Added new module: `deep_ranges.h`
+  * Implemented `vec_print_slots_compact()`
 
 
 0.1.2 | 07-11-2020
