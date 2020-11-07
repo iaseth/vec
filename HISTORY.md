@@ -5,7 +5,12 @@ X.Y.Z | (goals)
   * Nothing yet
 
 
-0.1.1 | (future)
+0.1.2 | (future)
+--------------------
+  * Nothing yet
+
+
+0.1.1 | 07-11-2020
 --------------------
   * Added `cursor`
   * Implemented `vec_length()` and `vec_capacity()` functions
