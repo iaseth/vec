@@ -4,6 +4,7 @@
 
 #include "vec/genesis.h"
 #include "vec/ranges.h"
+#include "vec/deep_ranges.h"
 #include "vec/crud.h"
 #include "vec/order.h"
 #include "vec/print.h"
@@ -28,6 +29,12 @@ struct VecNamespace vec_struct = {
 	.prefix = &vec_prefix,
 	.suffix = &vec_suffix,
 	.copy = &vec_copy,
+
+	.deep_slice = &vec_deep_slice,
+	.deep_subvec = &vec_deep_subvec,
+	.deep_prefix = &vec_deep_prefix,
+	.deep_suffix = &vec_deep_suffix,
+	.deep_copy = &vec_deep_copy,
 
 	.push = &vec_push,
 	.pop = &vec_pop,

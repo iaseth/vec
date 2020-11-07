@@ -38,6 +38,12 @@ struct VecNamespace {
 	Vec (*suffix) (Vec v, long length);
 	Vec (*copy) (Vec v);
 
+	Vec (*deep_slice) (Vec v, long start, long end);
+	Vec (*deep_subvec) (Vec v, long start, long length);
+	Vec (*deep_prefix) (Vec v, long length);
+	Vec (*deep_suffix) (Vec v, long length);
+	Vec (*deep_copy) (Vec v);
+
 	VecNamespace (*push) (Vec v, void *e);
 	void *(*pop) (Vec v);
 

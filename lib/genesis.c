@@ -27,6 +27,8 @@ vec_new_n (long capacity)
 
 	v->columns = 4;
 
+	v->clone = NULL;
+
 	v->less_than = &default_less_than;
 	v->hash_code = &default_hash_code;
 	v->to_string = &default_to_string;
