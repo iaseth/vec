@@ -27,9 +27,7 @@ struct VecNamespace vec_struct = {
 	.subvec = &vec_subvec,
 	.prefix = &vec_prefix,
 	.suffix = &vec_suffix,
-
 	.copy = &vec_copy,
-	.duplicate = &vec_duplicate,
 
 	.push = &vec_push,
 	.pop = &vec_pop,

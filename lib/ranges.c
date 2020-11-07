@@ -58,11 +58,4 @@ vec_copy (Vec v)
 	return vec_slice(v, 0, v->length);
 }
 
-Vec
-vec_duplicate (Vec v)
-{
-	if (v == NULL) return NULL;
-	return vec_slice(v, 0, v->length);
-}
-
 

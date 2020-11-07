@@ -10,7 +10,6 @@ Vec vec_prefix (Vec v, long length);
 Vec vec_suffix (Vec v, long length);
 
 Vec vec_copy (Vec v);
-Vec vec_duplicate (Vec v);
 
 
 
