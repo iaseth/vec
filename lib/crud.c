@@ -2,6 +2,8 @@
 
 #include <stdlib.h>
 
+#include "vec/vec.h"
+
 
 
 bool vec_empty (Vec v)

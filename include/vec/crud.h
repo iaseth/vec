@@ -2,7 +2,6 @@
 #define VEC_CRUD_H_IS_INCLUDED
 
 #include "vec/types.h"
-#include "vec/vec.h"
 
 long vec_length (Vec v);
 long vec_capacity (Vec v);
