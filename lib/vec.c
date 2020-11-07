@@ -47,6 +47,7 @@ struct VecNamespace vec_struct = {
 
 	.swap = &vec_swap,
 	.reverse = &vec_reverse,
+	.shuffle = &vec_shuffle,
 	.sort = &vec_sort,
 
 	.me = &vec_me

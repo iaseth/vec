@@ -70,6 +70,7 @@ struct VecNamespace {
 
 	VecNamespace (*swap) (Vec v, long a, long b);
 	VecNamespace (*reverse) (Vec v);
+	VecNamespace (*shuffle) (Vec v);
 	VecNamespace (*sort) (Vec v);
 
 	VecNamespace (*resize) (Vec v, long capacity);

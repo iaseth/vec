@@ -1,6 +1,7 @@
 #include "vec/order.h"
 
 #include <stdlib.h>
+#include <time.h>
 
 #include "vec/vec.h"
 
@@ -22,6 +23,18 @@ vec_reverse (Vec v)
 {
 	for (long i = 0; i < v->length / 2; ++i) {
 		long j = v->length - i - 1;
+		vec_swap(v, i, j);
+	}
+	return vec;
+}
+
+VecNamespace
+vec_shuffle (Vec v)
+{
+	time_t t;
+	srand((unsigned) time(&t));
+	for (long i = 0; i < v->length; ++i) {
+		long j = rand() % v->length;
 		vec_swap(v, i, j);
 	}
 	return vec;

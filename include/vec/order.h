@@ -5,6 +5,7 @@
 
 VecNamespace vec_swap (Vec v, long a, long b);
 VecNamespace vec_reverse (Vec v);
+VecNamespace vec_shuffle (Vec v);
 VecNamespace vec_sort (Vec v);
 
 
