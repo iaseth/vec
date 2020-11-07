@@ -4,7 +4,7 @@
 #include <stdbool.h>
 
 #define VEC_DEFAULT_LENGTH 16
-#define VEC_NAME_LENGTH 16
+#define VEC_NAME_LENGTH 64
 
 struct VecNamespace;
 typedef const struct VecNamespace *const VecNamespace;
@@ -73,6 +73,8 @@ struct VecNamespace {
 	VecNamespace (*print_slots) (Vec v);
 	VecNamespace (*print_slots_compact) (Vec v);
 	VecNamespace (*print_stats) (Vec v);
+
+	VecNamespace (*set_name) (Vec v, char *name);
 
 	VecNamespace (*swap) (Vec v, long a, long b);
 	VecNamespace (*reverse) (Vec v);

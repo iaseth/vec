@@ -8,6 +8,7 @@
 #include "vec/crud.h"
 #include "vec/order.h"
 #include "vec/print.h"
+#include "vec/magic.h"
 
 
 
@@ -49,6 +50,8 @@ struct VecNamespace vec_struct = {
 	.print_slots = &vec_print_slots,
 	.print_slots_compact = &vec_print_slots_compact,
 	.print_stats = &vec_print_stats,
+
+	.set_name = &vec_set_name,
 
 	.swap = &vec_swap,
 	.reverse = &vec_reverse,

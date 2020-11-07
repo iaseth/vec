@@ -5,6 +5,7 @@
 
 Vec vec_new ();
 Vec vec_new_n (long capacity);
+
 VecNamespace vec_free (Vec v);
 Vec vec_delete (Vec v);
 Vec vec_destroy (Vec v);

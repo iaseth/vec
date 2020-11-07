@@ -21,6 +21,7 @@ main (int argc, char const *argv[])
 		vec->push(v, p);
 	}
 
+	vec->set_name(v, "Points container");
 	vec->print_stats(v)->reverse(v)->shuffle(v)->print_slots(v);
 	foreach_vec (index, v) {
 		struct Point *ps = v->data[index];

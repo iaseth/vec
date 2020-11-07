@@ -3,6 +3,8 @@
 
 #include "vec/types.h"
 
+VecNamespace vec_set_name (Vec v, char *name);
+
 
 
 #endif
