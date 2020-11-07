@@ -13,6 +13,7 @@ VEC_NAMES =
 VEC_NAMES += types
 VEC_NAMES += crud
 VEC_NAMES += order
+VEC_NAMES += print
 VEC_NAMES += vec
 
 VEC_OBJ_NAMES = ${addsuffix .o, ${VEC_NAMES}}

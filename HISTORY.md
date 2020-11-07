@@ -7,7 +7,8 @@ X.Y.Z | (goals)
 
 0.1.2 | (future)
 --------------------
-  * Nothing yet
+  * Added new module: `print.h`
+  * Implemented `vec_stats()`
 
 
 0.1.1 | 07-11-2020

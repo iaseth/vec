@@ -12,6 +12,7 @@ int
 main (int argc, char const *argv[])
 {
 	Vec v = vec->new();
+	vec->stats(v);
 	for (int i = 0; i < 50; ++i) {
 		struct Point *p = malloc(sizeof(struct Point));
 		p->x = i;
@@ -20,7 +21,7 @@ main (int argc, char const *argv[])
 		vec->push(v, p);
 	}
 
-	vec->reverse(v);
+	vec->stats(v)->reverse(v);
 	foreach_vec (index, v) {
 		struct Point *ps = v->data[index];
 		printf("\t%3ld. Point (%3d, %3d, %3d)", index, ps->x, ps->y, ps->z);
