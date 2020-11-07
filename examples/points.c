@@ -24,6 +24,6 @@ main (int argc, char const *argv[])
 		struct Point *ps = v->data[index];
 		printf("Point (%d, %d, %d)\n", ps->x, ps->y, ps->z);
 	}
-	v = vec->free(v)->delete(v);
+	v = vec->destroy(v);
 	return 0;
 }

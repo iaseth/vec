@@ -9,6 +9,7 @@ struct VecNamespace vec_struct = {
 	.new_n = &vec_new_n,
 	.free = &vec_free,
 	.delete = &vec_delete,
+	.destroy = &vec_destroy,
 
 	.push = &vec_push,
 	.pop = &vec_pop,

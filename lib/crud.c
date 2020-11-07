@@ -53,6 +53,13 @@ vec_delete (Vec v)
 	return NULL;
 }
 
+Vec
+vec_destroy (Vec v)
+{
+	vec_free(v);
+	return vec_delete(v);
+}
+
 
 
 bool vec_empty (Vec v)
