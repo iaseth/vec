@@ -7,7 +7,10 @@
 
 bool default_less_than (void *e1, void *e2)
 {
-	return true;
+	if (e1 != NULL && e2 != NULL && e1 < e2) {
+		return true;
+	}
+	return false;
 }
 
 bool default_hash_code (void *e, char *s)
