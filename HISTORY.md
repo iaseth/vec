@@ -11,6 +11,7 @@ X.Y.Z | (goals)
   * Implemented `vec_stats()`
   * Moved constructors and destructors to a separate new module: `genesis.h`
   * Added new module: `magic.h`
+  * Added new module: `defaults.h` for defining default magic methods
 
 
 0.1.1 | 07-11-2020
