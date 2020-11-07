@@ -12,6 +12,7 @@ RM = ${AMP}rm -f
 VEC_NAMES = 
 VEC_NAMES += types
 VEC_NAMES += genesis
+VEC_NAMES += ranges
 VEC_NAMES += crud
 VEC_NAMES += order
 VEC_NAMES += print

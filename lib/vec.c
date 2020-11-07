@@ -3,6 +3,7 @@
 #include <stdlib.h>
 
 #include "vec/genesis.h"
+#include "vec/ranges.h"
 #include "vec/crud.h"
 #include "vec/order.h"
 #include "vec/print.h"
@@ -21,6 +22,11 @@ struct VecNamespace vec_struct = {
 	.free = &vec_free,
 	.delete = &vec_delete,
 	.destroy = &vec_destroy,
+
+	.slice = &vec_slice,
+	.subvec = &vec_subvec,
+	.prefix = &vec_prefix,
+	.suffix = &vec_suffix,
 
 	.push = &vec_push,
 	.pop = &vec_pop,

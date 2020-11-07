@@ -13,6 +13,7 @@ X.Y.Z | (goals)
   * Added new module: `magic.h`
   * Added new module: `defaults.h` for defining default magic methods
   * Implemented `vec_print()`
+  * Added new module: `ranges.h`
 
 
 0.1.1 | 07-11-2020
