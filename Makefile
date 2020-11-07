@@ -34,7 +34,7 @@ MAIN_OBJ = build/main.o
 
 BIN = build/vec
 
-default: clean lib ${BIN}
+default: clean lib examples ${BIN}
 
 lib: ${VEC_STATIC_LIB} ${VEC_DYNAMIC_LIB}
 
@@ -75,5 +75,6 @@ clean:
 	${RM} ${VEC_OBJS}
 	${RM} ${VEC_STATIC_LIB}
 	${RM} ${VEC_DYNAMIC_LIB}
+	${RM} ${VEC_EXAMPLE_EXES}
 
 
