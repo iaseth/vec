@@ -7,7 +7,7 @@ X.Y.Z | (goals)
 
 0.1.3 | (goals)
 --------------------
-  * Nothing yet
+  * Added new module: `deep_ranges.h`
 
 
 0.1.2 | 07-11-2020
