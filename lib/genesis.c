@@ -1,6 +1,7 @@
 #include "vec/genesis.h"
 
 #include <stdlib.h>
+#include <string.h>
 
 #include "vec/magic_defaults.h"
 #include "vec/vec.h"
@@ -24,6 +25,8 @@ vec_new_n (long capacity)
 	v->length = 0;
 	v->capacity = capacity;
 	v->cursor = 0;
+
+	strcpy(v->name, "Venonymous");
 
 	v->columns = 4;
 

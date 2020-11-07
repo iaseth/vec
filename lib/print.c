@@ -82,7 +82,7 @@ VecNamespace
 vec_print_stats (Vec v)
 {
 	if (v != NULL) {
-		printf("Vec with %ld/%ld objects.\n", v->length, v->capacity);
+		printf("Vec (%s) with %ld/%ld objects.\n", v->name, v->length, v->capacity);
 	} else {
 		printf("NULL passed to vec_print_stats().\n");
 	}

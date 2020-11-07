@@ -5,12 +5,13 @@ X.Y.Z | (goals)
   * Nothing yet
 
 
-0.1.3 | (goals)
+0.1.3 | (future)
 --------------------
   * Added new module: `deep_ranges.h`
   * Implemented `vec_print_slots_compact()`
   * Implemented `vec_shuffle()`
   * Implemented `deep_ranges` methods
+  * Added `name` to `vec`
 
 
 0.1.2 | 07-11-2020

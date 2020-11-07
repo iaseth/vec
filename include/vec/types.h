@@ -4,6 +4,7 @@
 #include <stdbool.h>
 
 #define VEC_DEFAULT_LENGTH 16
+#define VEC_NAME_LENGTH 16
 
 struct VecNamespace;
 typedef const struct VecNamespace *const VecNamespace;
@@ -14,6 +15,7 @@ struct Vec {
 	long capacity;
 	long cursor;
 
+	char name[VEC_NAME_LENGTH];
 	long columns;
 
 	void *(*clone) (void *e);
