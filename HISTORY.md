@@ -5,6 +5,11 @@ X.Y.Z | (goals)
   * Nothing yet
 
 
+0.1.3 | (goals)
+--------------------
+  * Nothing yet
+
+
 0.1.2 | 07-11-2020
 --------------------
   * Added new module: `print.h`
