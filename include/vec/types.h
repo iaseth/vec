@@ -46,6 +46,17 @@ struct VecNamespace {
 	VecNamespace (*resize) (Vec v, long capacity);
 	VecNamespace (*reserve) (Vec v, long capacity);
 
+	void *(*front) (Vec v);
+	void *(*back) (Vec v);
+	void *(*nth) (Vec v, long n);
+
+	void *(*get) (Vec v);
+	void *(*get_nth) (Vec v, long n);
+	void *(*next) (Vec v);
+	void *(*previous) (Vec v);
+	VecNamespace (*forward) (Vec v);
+	VecNamespace (*backward) (Vec v);
+
 	VecNamespace (*swap) (Vec v, long a, long b);
 	VecNamespace (*reverse) (Vec v);
 	VecNamespace (*shuffle) (Vec v);
@@ -62,17 +73,6 @@ struct VecNamespace {
 	Vec (*deep_prefix) (Vec v, long length);
 	Vec (*deep_suffix) (Vec v, long length);
 	Vec (*deep_copy) (Vec v);
-
-	void *(*get) (Vec v);
-	void *(*get_nth) (Vec v, long n);
-	void *(*next) (Vec v);
-	void *(*previous) (Vec v);
-	VecNamespace (*forward) (Vec v);
-	VecNamespace (*backward) (Vec v);
-
-	void *(*front) (Vec v);
-	void *(*back) (Vec v);
-	void *(*nth) (Vec v, long n);
 
 	VecNamespace (*clear) (Vec v);
 	VecNamespace (*erase) (Vec v, long start, long end);

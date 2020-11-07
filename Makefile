@@ -13,6 +13,7 @@ VEC_NAMES =
 VEC_NAMES += types
 VEC_NAMES += genesis
 VEC_NAMES += crud
+VEC_NAMES += cursor
 VEC_NAMES += search
 VEC_NAMES += order
 VEC_NAMES += ranges

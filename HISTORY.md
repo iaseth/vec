@@ -13,6 +13,7 @@ X.Y.Z | (goals)
   * Implemented `deep_ranges` methods
   * Added `name` to `vec`
   * Added new module: `search.h`
+  * Added new module: `cursor.h`
 
 
 0.1.2 | 07-11-2020
