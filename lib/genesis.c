@@ -2,6 +2,7 @@
 
 #include <stdlib.h>
 
+#include "vec/defaults.h"
 #include "vec/vec.h"
 
 
@@ -24,9 +25,11 @@ vec_new_n (long capacity)
 	v->capacity = capacity;
 	v->cursor = 0;
 
-	v->less_than = NULL;
-	v->hash_code = NULL;
-	v->to_string = NULL;
+	v->columns = 4;
+
+	v->less_than = &default_less_than;
+	v->hash_code = &default_hash_code;
+	v->to_string = &default_to_string;
 
 	return v;
 }

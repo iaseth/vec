@@ -14,6 +14,8 @@ struct Vec {
 	long capacity;
 	long cursor;
 
+	long columns;
+
 	void *(*clone) (void *e);
 
 	bool (*less_than) (void *e1, void *e2);
@@ -62,6 +64,8 @@ struct VecNamespace {
 
 	VecNamespace (*resize) (Vec v, long capacity);
 	VecNamespace (*reserve) (Vec v, long capacity);
+
+	VecNamespace (*me) ();
 };
 
 

@@ -9,6 +9,12 @@
 
 
 
+VecNamespace
+vec_me ()
+{
+	return vec;
+}
+
 struct VecNamespace vec_struct = {
 	.new = &vec_new,
 	.new_n = &vec_new_n,
@@ -32,7 +38,7 @@ struct VecNamespace vec_struct = {
 	.reverse = &vec_reverse,
 	.sort = &vec_sort,
 
-	.print = NULL
+	.me = &vec_me
 };
 
 VecNamespace vec = &vec_struct;

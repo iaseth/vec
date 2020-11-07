@@ -12,6 +12,7 @@ X.Y.Z | (goals)
   * Moved constructors and destructors to a separate new module: `genesis.h`
   * Added new module: `magic.h`
   * Added new module: `defaults.h` for defining default magic methods
+  * Implemented `vec_print()`
 
 
 0.1.1 | 07-11-2020
