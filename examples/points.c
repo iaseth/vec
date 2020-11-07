@@ -8,10 +8,22 @@ struct Point {
 	int x, y, z;
 };
 
+bool
+point_to_string (void *e, char *s)
+{
+	if (e != NULL && s != NULL) {
+		struct Point *p = e;
+		sprintf(s, "Point [%3d, %3d, %3d]", p->x, p->y, p->z);
+		return true;
+	}
+	return false;
+}
+
 int
 main (int argc, char const *argv[])
 {
 	Vec v = vec->new();
+	vec->set_name(v, "Points container")->set_to_string(v, point_to_string);
 	vec->print_stats(v);
 	for (int i = 0; i < 50; ++i) {
 		struct Point *p = malloc(sizeof(struct Point));
@@ -21,15 +33,8 @@ main (int argc, char const *argv[])
 		vec->push(v, p);
 	}
 
-	vec->set_name(v, "Points container");
 	vec->print_stats(v)->reverse(v)->shuffle(v)->print_slots(v);
-	foreach_vec (index, v) {
-		struct Point *ps = v->data[index];
-		printf("\t%3ld. Point (%3d, %3d, %3d)", index, ps->x, ps->y, ps->z);
-		if (index % 4 == 3) {
-			printf("\n");
-		}
-	}
+	vec->print(v);
 	printf("\n");
 
 	v = vec->destroy(v);

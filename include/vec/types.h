@@ -78,6 +78,9 @@ struct VecNamespace {
 	VecNamespace (*erase) (Vec v, long start, long end);
 
 	VecNamespace (*set_name) (Vec v, char *name);
+	VecNamespace (*set_less_than) (Vec v, bool (*less_than) (void *e1, void *e2));
+	VecNamespace (*set_hash_code) (Vec v, bool (*hash_code) (void *e, char *s));
+	VecNamespace (*set_to_string) (Vec v, bool (*to_string) (void *e, char *s));
 
 	VecNamespace (*print) (Vec v);
 	VecNamespace (*print_slots) (Vec v);

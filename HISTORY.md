@@ -14,6 +14,7 @@ X.Y.Z | (goals)
   * Added `name` to `vec`
   * Added new module: `search.h`
   * Added new module: `cursor.h`
+  * Added setters for magic methods: `vec_set_less_than()`, `vec_set_hash_code()` and `vec_set_to_string()`
 
 
 0.1.2 | 07-11-2020

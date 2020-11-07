@@ -52,6 +52,9 @@ struct VecNamespace vec_struct = {
 	.deep_copy = &vec_deep_copy,
 
 	.set_name = &vec_set_name,
+	.set_less_than = &vec_set_less_than,
+	.set_hash_code = &vec_set_hash_code,
+	.set_to_string = &vec_set_to_string,
 
 	.print = &vec_print,
 	.print_slots = &vec_print_slots,
