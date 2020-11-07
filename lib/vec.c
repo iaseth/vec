@@ -2,6 +2,7 @@
 
 #include <stdlib.h>
 
+#include "vec/genesis.h"
 #include "vec/crud.h"
 #include "vec/order.h"
 #include "vec/print.h"

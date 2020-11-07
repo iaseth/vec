@@ -9,6 +9,7 @@ X.Y.Z | (goals)
 --------------------
   * Added new module: `print.h`
   * Implemented `vec_stats()`
+  * Moved constructors and destructors to a separate new module: `genesis.h`
 
 
 0.1.1 | 07-11-2020
