@@ -32,6 +32,11 @@ struct VecNamespace {
 	Vec (*delete) (Vec v);
 	Vec (*destroy) (Vec v);
 
+	Vec (*slice) (Vec v, long start, long end);
+	Vec (*subvec) (Vec v, long start, long length);
+	Vec (*prefix) (Vec v, long length);
+	Vec (*suffix) (Vec v, long length);
+
 	VecNamespace (*push) (Vec v, void *e);
 	void *(*pop) (Vec v);
 
