@@ -12,6 +12,7 @@ X.Y.Z | (goals)
   * Implemented `vec_shuffle()`
   * Implemented `deep_ranges` methods
   * Added `name` to `vec`
+  * Added new module: `search.h`
 
 
 0.1.2 | 07-11-2020
