@@ -50,3 +50,19 @@ vec_suffix (Vec v, long length)
 }
 
 
+
+Vec
+vec_copy (Vec v)
+{
+	if (v == NULL) return NULL;
+	return vec_slice(v, 0, v->length);
+}
+
+Vec
+vec_duplicate (Vec v)
+{
+	if (v == NULL) return NULL;
+	return vec_slice(v, 0, v->length);
+}
+
+

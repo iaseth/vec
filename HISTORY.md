@@ -14,6 +14,7 @@ X.Y.Z | (goals)
   * Added new module: `defaults.h` for defining default magic methods
   * Implemented `vec_print()`
   * Added new module: `ranges.h`
+  * Added `vec_copy()` and `vec_duplicate()`
 
 
 0.1.1 | 07-11-2020
