@@ -20,6 +20,7 @@ main (int argc, char const *argv[])
 		vec->push(v, p);
 	}
 
+	vec->reverse(v);
 	foreach_vec (index, v) {
 		struct Point *ps = v->data[index];
 		printf("\t%3ld. Point (%3d, %3d, %3d)", index, ps->x, ps->y, ps->z);

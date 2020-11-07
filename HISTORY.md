@@ -15,6 +15,7 @@ X.Y.Z | (goals)
   * Added first `example`: `points.c`
   * Added `vec_free()` to free `vec` elements
   * Added `vec_destroy()` as a shortcut to `vec_free()` then `vec_delete()`
+  * Implemented `vec_swap()` and `vec_reverse()`
 
 
 0.1.0 | 07-11-2020

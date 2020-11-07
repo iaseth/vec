@@ -3,6 +3,7 @@
 #include <stdlib.h>
 
 #include "vec/crud.h"
+#include "vec/order.h"
 
 struct VecNamespace vec_struct = {
 	.new = &vec_new,
@@ -19,6 +20,10 @@ struct VecNamespace vec_struct = {
 
 	.empty = &vec_empty,
 	.full = &vec_full,
+
+	.swap = &vec_swap,
+	.reverse = &vec_reverse,
+	.sort = &vec_sort,
 
 	.print = NULL
 };

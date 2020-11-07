@@ -55,6 +55,7 @@ struct VecNamespace {
 
 	VecNamespace (*print) (Vec v);
 
+	VecNamespace (*swap) (Vec v, long a, long b);
 	VecNamespace (*reverse) (Vec v);
 	VecNamespace (*sort) (Vec v);
 
