@@ -13,6 +13,7 @@ X.Y.Z | (goals)
   * Added magic method fields to `Vec`: `less_than()`, `hash_code()` and `to_string()`
   * Added magic method field `clone()` to allow for creating a duplicate copy of `Vec`
   * Added first `example`: `points.c`
+  * Added `vec_free()` to free `vec` elements
 
 
 0.1.0 | 07-11-2020

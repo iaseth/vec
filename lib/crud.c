@@ -29,14 +29,23 @@ vec_new_n (long capacity)
 	return v;
 }
 
+VecNamespace
+vec_free (Vec v)
+{
+	if (v != NULL && v->data != NULL && v->length > 0) {
+		for (long i = 0; i < v->length; ++i) {
+			if (v->data[i] != NULL) free(v->data[i]);
+		}
+		v->length = 0;
+	}
+	return vec;
+}
+
 Vec
 vec_delete (Vec v)
 {
 	if (v != NULL) {
 		if (v->data != NULL) {
-			for (long i = 0; i < v->length; ++i) {
-				if (v->data[i] != NULL) free(v->data[i]);
-			}
 			free(v->data);
 		}
 		free(v);

@@ -26,6 +26,7 @@ typedef struct Vec *Vec;
 struct VecNamespace {
 	Vec (*new) ();
 	Vec (*new_n) (long capacity);
+	VecNamespace (*free) (Vec v);
 	Vec (*delete) (Vec v);
 
 	VecNamespace (*push) (Vec v, void *e);
