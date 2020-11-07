@@ -4,7 +4,7 @@
 #include "vec/types.h"
 
 VecNamespace vec_print (Vec v);
-VecNamespace vec_stats (Vec v);
+VecNamespace vec_print_stats (Vec v);
 
 
 

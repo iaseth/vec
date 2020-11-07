@@ -64,7 +64,7 @@ struct VecNamespace {
 	VecNamespace (*erase) (Vec v, long start, long end);
 
 	VecNamespace (*print) (Vec v);
-	VecNamespace (*stats) (Vec v);
+	VecNamespace (*print_stats) (Vec v);
 
 	VecNamespace (*swap) (Vec v, long a, long b);
 	VecNamespace (*reverse) (Vec v);

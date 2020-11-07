@@ -41,7 +41,7 @@ struct VecNamespace vec_struct = {
 	.full = &vec_full,
 
 	.print = &vec_print,
-	.stats = &vec_stats,
+	.print_stats = &vec_print_stats,
 
 	.swap = &vec_swap,
 	.reverse = &vec_reverse,
